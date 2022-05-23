@@ -1,0 +1,84 @@
+body::-webkit-scrollbar {
+    display: none;
+  }
+
+body{
+    font-family: montserrat;
+}
+
+
+
+/* CAROUSEL */
+
+.carousel-indicators{
+    color: white;
+}
+
+.carousel-inner .carousel-item{
+    height: 90vh;
+    background-size: cover;
+    
+}
+
+.carousel-item{
+    Position:relative;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item::before {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:linear-gradient( rgba(0, 0, 0, .2) 5%, rgba(0, 0, 0, .5) 40%, rgba(0, 0, 0, 1) 100%);
+    overflow-x: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+}
+
+.carousel-caption{
+    margin-bottom: 50px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.carousel-caption h5{
+    font-size: 35px;
+    font-weight: semi bold;
+}
+
+/* AKHIR CAROUSEL */
+
+/* AWAL CARD */
+.container{
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.card{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-bottom: 30px;
+}
+
+.card-title{
+    color: #897853;
+    font-weight: bold;
+    text-align: center;
+    font-size: 29px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.card-body a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.card-body a:hover{
+    color: #897853;
+}

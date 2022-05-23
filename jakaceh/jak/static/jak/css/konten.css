@@ -1,0 +1,120 @@
+body{
+    font-family: montserrat;
+}
+
+
+/* Menu Start */
+section{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+
+.container{
+    padding-top: 45px;
+    padding-bottom: 10px;
+}
+
+.card{
+    border: solid 1px #897853;
+    margin-bottom: 70px;
+    padding-bottom: 20px;
+}
+
+.card-title{
+    color: #897853;
+    text-align: center;
+    font-size: 29px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.card .row .more{
+    color: #000000;
+}
+
+.card .row .more:hover{
+    color: #897853;
+}
+
+.card-body img{
+    width: 300px;
+}
+
+.card-body .card-text p{
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    .map-responsive{
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    .map-responsive{
+        width: 350px;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    .map-responsive{
+        width: 550px;
+        margin-left: 10px;
+    }
+}
+
+/* Menu End */
+
+/* Modal Start */
+.modal-dialog{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.modal-content{
+    border: solid 1px #897853;  
+}
+
+.modal-header{
+    border-bottom: 2px solid #897853;
+}
+
+.modal-body p{
+    text-align: justify;
+}
+
+.modal-footer{
+    border-top: 2px solid #897853;
+}
+.modal-footer .tutup{
+    background: #897853;
+    color: #ffffff;
+}
+
+.modal-footer .tutup:hover{
+    background: #4E3620;
+}
+/* Modal End */
+
+#btn-back-to-top {
+    background: #897853;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#btn-back-to-top:hover{
+    background: #4E3620;
+}

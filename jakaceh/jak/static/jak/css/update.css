@@ -1,0 +1,40 @@
+.form-control:focus {
+    box-shadow: none;
+    border-color: #897853
+}
+
+h4{
+    color: #897853;
+    font-size: 30px;
+    font-family: mohave;
+}
+
+.profile-button{
+    color: #F8F4E1;
+    background-color: #897853;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.profile-button:hover{
+    background-color: #4e3620;
+    color: #ffffff;
+
+}
+
+.labels {
+    font-size: 11px
+}
+
+.judul{
+    font-size: 13px;
+    font-weight: bold;
+    color: #897853;
+}
+
+.isi{
+    font-size: 15px;
+    color: #7779;
+
+}

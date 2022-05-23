@@ -1,0 +1,95 @@
+body{
+    font-family: montserrat;
+}
+
+
+/* Menu Start */
+section{
+    padding-top: 80px;
+}
+
+.container{
+    padding-top: 45px;
+}
+
+.card{
+    border: solid 1px #897853;
+    margin-bottom: 40px;
+}
+
+.card-title{
+    color: #897853;
+    text-align: center;
+    font-size: 29px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+
+.card-body img{
+    width: 200px;
+    height: 200px;
+}
+
+.judul{
+    font-size: 20px;
+    font-weight: bold;
+    color: #897853;
+}
+
+.isi{
+    font-size: 19px;
+    color: #7779;
+
+}
+
+.profile-button{
+    color: #F8F4E1;
+    background-color: #897853;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.profile-button:hover{
+    background-color: #4e3620;
+    color: #ffffff;
+
+}
+
+.simpan-button{
+    margin-top: 10px;
+    color: #F8F4E1;
+    background-color: #897853;
+    font-size: 10px;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.simpan-button:hover{
+    background-color: #4e3620;
+    color: #ffffff;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    
+}
+@media only screen and (max-width: 425px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    
+}
+@media only screen and (max-width: 1024px) {
+    .card-body img{
+        width: 500px;
+        item-align: center;
+    }
+    
+}
