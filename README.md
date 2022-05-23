@@ -7,6 +7,26 @@ JakAceh merupakan website yang dikerjakan sebagai tugas akhir pada mata kuliah P
 - MongoDb 5.0.6
 
 ## Run
+1. Clone Repository
 ```
-git clone
+git clone https://github.com/ridha-arlian/JakAceh.git
+```
+2. Install Django with pip
+```
+pip install django
+```
+3. Install Djongo Library with pip
+```
+pip install pymongo==3.12.3
+```
+4. Migration the database
+```
+python manage.py makemigrations
+```
+```
+python manage.py migrate
+```
+5. Run the Server
+```
+python manage.py runserver
 ```
