@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        {% block title %}
+        <title>Penginapan | Jak-Aceh</title>
+        {% endblock title %}
+
+        
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+        
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Menu1 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">HOTEL RASAMALA</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/rasamala.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Jl. Teuku Umar No.257, Geuceu Kayee Jato, Kec. Banda Raya, Kota Banda Aceh, Aceh 23239
+                                        <br>Telp: (0651) 48447
+                                        <br><b>Waktu check in</b>: 12.00
+                                        <br><b>Waktu check out</b>: 12.00
+                                        </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe  width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1957573272284!2d95.30568671414748!3d5.53796063537207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403960ffffffff%3A0x79a78d1150294aa5!2sHotel%20Rasamala!5e0!3m2!1sid!2sid!4v1653134216384!5m2!1sid!2sid">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+            
+                <!-- Menu1 End -->
+                
+
+                <!-- Menu2 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">KYRIAD MURAYA HOTEL</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/kyriad.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Jl. Teuku Moh. Daud Beureueh No.5, Laksana, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415
+                                        <br>Telp: (0651) 6300123
+                                        <br><b>Waktu check in</b>: 14.00
+                                        <br><b>Waktu check out</b>: 12.00</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe  width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0710421348185!2d95.32013541414757!3d5.556488035191149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403747b3f571d7%3A0x308adaca83dd1d8c!2sHotel%20Kyriad%20Muraya!5e0!3m2!1sid!2sid!4v1653133922830!5m2!1sid!2sid">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+            
+                <!-- Menu2 End -->
+
+
+                <!-- Menu3 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">HERMES PALACE HOTEL</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/hermes.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Jl. T. Panglima Nyak Makam, Lambhuk, Kec. Ulee Kareng, Kota Banda Aceh, Aceh 23117
+                                        <br>Telp: (0651) 7555888
+                                        <br><b>Waktu check in</b>: 14.00
+                                        <br><b>Waktu check out</b>: 11.00</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0744645217424!2d95.34154921414758!3d5.555980435196129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304037725118dcb7%3A0x70e72305d8d7d91!2sHermes%20Palace%20Hotel!5e0!3m2!1sid!2sid!4v1653134419583!5m2!1sid!2sid">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu3 End -->
+
+                
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+        
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

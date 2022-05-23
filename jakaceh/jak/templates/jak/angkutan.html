@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        {% block title %}
+        <title>Angkutan | Jak-Aceh</title>
+        {% endblock title %}
+
+        
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+        
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Start Menu1 -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">HALTE TRANSKUTARAJA BKKBN</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/TRANSKUTARAJA.jpg' %}" class="img-fluid rounded" alt="Halte TransKutaraja BKKBN">
+                                    <p class="card-text pt-4">
+                                        Jalan Teuku Nyak Arief, Baru City, Kuta Alam, Banda Aceh City, Aceh
+                                        <br><b>Buka</b>:&nbsp;Senin-Sabtu,06.00–19.30
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minggu,06.00–16.00
+                                        <br><b>Telp</b>:
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.974779837136!2d95.34053091383389!3d5.570746535052293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304037053c1bede3%3A0x95d99979c7adb450!2sHalte%20TransKutaraja%20BKKBN!5e0!3m2!1sid!2sid!4v1653144098040!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Menu1 -->
+                
+
+                <!-- Start Menu2 -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">PELABUHAN ULEE LHEUE</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/PELABUHAN.jpeg' %}" class="img-fluid rounded" alt="Pelabuhan ulee lheue, Ulee Lheue, Kota Banda Aceh, Aceh">
+                                    <p class="card-text pt-4">
+                                        Jalan Sabang, Ulee Lheue, Ulee Lheue, Meuraxa, Kota Banda Aceh, Aceh 23116
+                                        <br><b>Buka</b>:&nbsp;Senin-Sabtu, 06.00–19.30
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Minggu, 06.00–16.00
+                                        <br><b>Telp</b>:
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0154488133458!2d95.29162731383387!3d5.564727035111279!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304030c3f0b94561%3A0x77c2d46636ca5237!2sPelabuhan%20ulee%20lheue!5e0!3m2!1sid!2sid!4v1653144165695!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Menu2 -->
+
+
+                <!-- Start Menu3 -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">TERMINAL L-300</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/TERMINAL.jpg' %}" class="img-fluid rounded" alt="TERMINAL">
+                                    <p class="card-text pt-4">
+                                        Lueng Bata, Kec. Lueng Bata, Kota Banda Aceh, Aceh 23123
+                                        <br><b>Buka</b>: Setiap Hari, 24 jam
+                                        <br><b>Telp</b>: 082299418803
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1892979978716!2d95.33699911383385!3d5.538921735363503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403762f6a1b353%3A0xd1330aefc6bf27ed!2sTerminal%20L-300%20Banda%20Aceh!5e0!3m2!1sid!2sid!4v1653146541239!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- End Menu3 -->
+
+                
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+        
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

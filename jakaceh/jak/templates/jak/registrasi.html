@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static  %}
+
+        {% block styles %}
+        <link rel="stylesheet" href="{% static 'jak/css/registrasi.css' %}">
+        {% endblock styles %}
+        
+        {% block title %}
+        <title>Halaman Pendaftaran | Jak-Aceh</title>
+        {% endblock title %}
+
+
+        {% block body %}
+        
+        <div class="login-form">
+            <form action="" method="POST" class="signin-form">
+                {% csrf_token %}
+                <div class="form-head">
+                    <h3>JAK-ACEH</h3>
+                    <hr/>
+                </div>
+                <div class="form-group">
+                    
+                    <input type="text" class="form-control item" id="username" name="username" placeholder="Nama User">
+                    <input type="text" class="form-control item" id="first_name" name="first_name" placeholder="Nama Awal">
+                    <input type="text" class="form-control item" id="last_name" name="last_name" placeholder="Nama Akhir">
+                    <input type="email" class="form-control item" id="email" name="email" placeholder="Alamat Surel">
+                    <input type="password" class="form-control item" id="password" name="password" placeholder="Kata Sandi">
+                    <input type="password" class="form-control item" id="password2" name="password2" placeholder="Konfirmasi Kata Sandi">
+                    <a href="{% url 'login' %}" class="links">Sudah Punya Akun? Masuk</a>
+                    {% for message in messages%}
+                    <h5>{{message}}</h5>
+                    {% endfor %}
+                </div> 
+                <div class="form-group text-center">
+                    <button type="submit" name="login" class="btn btn-block login">DAFTAR</button>
+                </div>
+            </form>
+        </div>
+        {% endblock body %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        {% block title %}
+        <title>SPBU & Rest Area | Jak-Aceh</title>
+        {% endblock title %}
+
+        
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+        
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Menu1 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">SPBU KUTA ALAM</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/KUTA.jpg' %}" class="img-fluid rounded" alt="SPBU KUTA ALAM">
+                                    <p class="card-text pt-4">
+                                        Kuta Alam, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415
+                                        <br><b>Buka</b>: Setiap hari, 08.00-23.00
+                                        <br><b>Telp</b>: 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.073974376303!2d95.3263112138339!3d5.556053135196183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3040375d6e590de7%3A0x2c002cf3c4bfaae7!2sSPBU%20Kuta%20Alam!5e0!3m2!1sid!2sid!4v1653145275351!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu1 End -->
+                
+
+                <!-- Menu2 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">SPBU BATOH</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/BATOH.jpg' %}" class="img-fluid rounded" alt="SPBU BATOH">
+                                    <p class="card-text pt-4">
+                                        Batoh, Kec. Lueng Bata, Kota Banda Aceh, Aceh
+                                        <br><b>Buka</b>: Setiap hari, 07.00-23.00
+                                        <br><b>Telp</b>: 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.215220702886!2d95.32655431268854!3d5.535063624467624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304039e0864c2da7%3A0x219e877cd2685eba!2sSPBU%20Batoh!5e0!3m2!1sid!2sid!4v1653145572555!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu2 End -->
+
+
+                <!-- Menu3 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">SPBU LAMNYONG</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/LAMNYONG.jpg' %}" class="img-fluid rounded" alt="SPBU LAMNYONG">
+                                    <p class="card-text pt-4">
+                                        Jl. Teuku Nyak Arief, Lamnyong, Kec. Syiah Kuala, Kota Banda Aceh, Aceh 23112
+                                        <br><b>Buka</b>: Setiap hari, 06.00-23.00
+                                        <br><b>Telp</b>: 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.93534802628!2d95.35290191383389!3d5.576576734995068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403701b27a21b7%3A0x8596834bef9208a9!2sSPBU%20Pertamina%20Lamnyong!5e0!3m2!1sid!2sid!4v1653146418002!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu3 End -->
+
+                
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+        
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

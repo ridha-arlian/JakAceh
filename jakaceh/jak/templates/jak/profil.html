@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/profil.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+
+        {% block title %}
+        <title>{{ user_profile.user.username }} | Jak-Aceh</title>
+        {% endblock title %}
+
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+
+        <!-- Profile Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">{{user_profile.user.username}}</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{{user_profile.profileimg.url}}" class=" rounded-circle" alt="Profile Picture {{user_profile.user.username}}">
+                                    <p class="card-text pt-4 fst-italic">"{{user_profile.bio}}"</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <form action="" method="POST" enctype="multipart/form-data">
+                                    {% csrf_token %}
+                                    <div class="row mt-2">
+                                        <div class="col-md-6">
+                                            <label class="labels judul">Nama Awal</label>
+                                            <p class="labels isi">{{user_profile.user.first_name}}</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="labels judul">Nama Akhir</label>
+                                            <p class="labels isi">{{user_profile.user.last_name}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <label class="labels judul">Alamat Surel</label>
+                                            <p class="labels isi">{{user_profile.user.email}}</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-md-12">
+                                            <label class="labels judul">Ganti Foto Profil</label>
+                                            <input type="file" name="image" class="form-control" value="{{user_profile.profileimg.url}}">
+                                            <button class="btn simpan-button" type="submit">Simpan Foto</button> 
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="mt-5 text-end">
+                                        <a href="{% url 'update' %}"><button type="button" name="login" class="btn profile-button btn-block">Ubah Profil</button></a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>               
+            </div>
+        </section>
+        <!-- Menu End -->
+
+        {% endblock body %}

@@ -1,0 +1,167 @@
+{% extends 'base.html' %}
+{% load static %}
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+
+        {% block title %}
+        <title>Wisata | Jak-Aceh</title>
+        {% endblock title %}
+
+        {% block body %}
+
+        {% include 'jak/snippet/navside.html' %}
+
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Menu1 Start -->
+                <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">MASJID RAYA BAITURRAHMAN</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/carousel1.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Masjid Raya Baiturrahman merupakan salah satu masjid yang ada di Desa Kampung Baru, Kecamatan Baiturrahman, Kota Banda Aceh...</p>
+                                    <a href="Wisata.html" class="more mt-auto text-end pe-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Lihat Selengkapnya...</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe class="map-responsive" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63537.4512861473!2d95.317285!3d5.553571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbabe816ca4be1e2f!2sMasjid%20Raya%20Baiturrahman!5e0!3m2!1sid!2sid!4v1649605480462!5m2!1sid!2sid">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <!-- Modal Start-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lh-lg"> Masjid Raya Baiturrahman merupakan salah satu masjid yang ada di Desa Kampung Baru, Kecamatan Baiturrahman, Kota Banda Aceh. Masyarakat Aceh menggunakan masjid ini sebagai tempat ibadah dan syiar Islam. Masjid Raya Baiturrahman didirikan oleh Sultan Alauddin Mahmud Syah I pada tahun 1292 M. 
+                                                    Bahan bangunan yang pertama terdiri dari kayu dan menggunakan atap dari rumbia. Belanda sempat menguasai masjid selama penyerbuan di Aceh pada tahun 1873 di bawah komando Jenderal Kohler. Masjid Raya Baiturrahman pernah dibakar oleh Belanda pada tahun 1874 saat penyerbuan kedua. Belanda memutuskan 
+                                                    untuk membangun kembali masjid pada tanggal 9 Oktober 1879 atas nasehat Snouck Horgronje. Bangunan masjid dirancang oleh Kapten Genie Marechausse dan peletakan batu pertama dilakukan oleh Teungku Malikul Adil disaksikan oleh pembesar Belanda. Model Masjid Baiturrahman mencerminkan arsitektur Eropa dan 
+                                                    Islam. Kubah masjid hanya satu sampai awal tahun 1935. Setelahnya masjid diperluas sehingga menambah dua kubah lagi. Kubah masjid bertambah menjadi 5 pada tahun 1957 setelah masjid diperbesar lagi. Masjid Raya Baiturrahman dipugar tahun 1979 dipugar dalam Proyek Pembinaan dan Pemeliharaan Peninggalan Sejarah 
+                                                    dan Purbakala. Denah masjid berbentu empat persegi dengan pintu masuk berupa relung-relung tanpa daun pintu. Di bagian atasnya dihiasi dengan menara-menara. Kaligrafi Islam terpajang pada dinding ruangan, sedangkan pada jendela dan pintu terdapat hiasan empat persegi, belah ketupat, sulur dan bunga. Ruang 
+                                                    ibadah memiliki tiang-tiang dengan hiasan lengkungan, daun, dan garis-garis. Mihrab dan mimbar dihiasi daun-daunan, bunga dan sulur-sulur. Di depan halaman masjid terdapat menara yang sangat tinggi dengan tangga beton berputar. Atap masjid berbentuk kubah berjumlah lima buah dengan hiasan "memolo" berbentuk 
+                                                    bulat di puncak kubah.[2] Masjid Raya Baiturrahman adalah simbol agama, budaya, semangat, kekuatan, perjuangan dan nasionalisme rakyat Aceh. Masjid ini adalah landmark Banda Aceh sejak era Kesultanan Aceh dan selamat dari bencana tsunami pada 26 Desember 2004 silam.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn tutup" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal End -->
+                <!-- Menu1 End -->
+
+                
+                <!-- Menu2 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">MUSEUM TSUNAMI ACEH</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                <img src="{% static 'jak/img/carousel2.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Museum Tsunami Aceh adalah sebuah museum di Bnada Aceh yang dirancang sebagai monumen simbolis untuk bencana gempa bumi dan tsunami...</p>
+                                    <a href="#" class="more mt-auto text-end pe-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal1">Lihat Selengkapnya...</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1299561256!2d95.31298334896836!3d5.547743595957815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403752049cfb9d%3A0x5e2203a9f54643f9!2sMuseum%20Tsunami%20Aceh!5e0!3m2!1sid!2sid!4v1653133848024!5m2!1sid!2sid" >
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <!-- Modal Start-->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lh-lg"> Bangunan museum ini didesain oleh seorang dosen arsitektur ITB Bandung, M. Ridwan Kamil. Desain yang berjudul Rumoh Aceh as Escape Hill ini mengambil ide dasar rumoh Aceh  yaitu rumah tradisional masyarakat Aceh berupa bangunan rumah panggung. Museum ini dibangun dengan dana sekitar Rp 70 miliar dan memiliki 2 lantai. Lantai 1 merupakan area terbuka yang bisa dilihat dari luar dan fungsinya sebagai tempat untuk mengenang peristiwa tsunami.
+
+                                        <br><br>Di Lantai 1 ini terdapat beberapa ruangan yang berisi rekam jejak kejadian tsunami 2004. Antara lain ruang pamer tsunami, pratsunami, saat tsunami dan ruang pasca tsunami. Selain itu, beberapa gambar peristiwa tsunami, artefak jejak tsunami, dan diorama juga ada di lantai ini. Salah satunya adalah diorama kapal nelayan yang diterjang gelombang tsunami dan diorama kapal PLTD Apung yang terdampar di Punge Blang Cut. Sedangkan di lantai 2 museum ini berisi media-media pembelajaran berupa perpustakaan, ruang alat peraga, ruang 4D (empat dimensi), dan souvenir shop.
+                                        
+                                        <br><br>Alat peraga yang ditampilkan antara lain yaitu : rancangan bangunan yang tahan gempa, serta model diagram patahan bumi. Selain itu juga ada beberapa fasilitas terus disempurnakan seperti ruang lukisan bencana, diorama, pustaka, ruang 4 dimensi, serta cafe. Eksterior museum ini mengekspresikan keberagaman budaya Aceh dengan ornamen dekoratif berunsur transparansi seperti anyaman bambu. Tampilan interiornya akan menggiring Anda pada perenungan atas musibah dahsyat yang diderita warga Aceh sekaligus kepasrahan dan pengakuan atas kekuatan dan kekuasaan Tuhan.
+                                                </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn tutup" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal End -->
+                <!-- Menu2 End -->
+
+
+                <!-- Menu3 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">MUSEUM ACEH</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/museumaceh.jpg' %}" class="img-fluid rounded" alt="Masjid Raya Baiturrahman">
+                                    <p class="card-text pt-4">Museum Aceh didirikan pada masa pemerintahan Hindia Belanda, yang pemakaiannya diresmikan oleh Gubernur Sipil dan Militer Belanda...</p>
+                                    <a href="Wisata.html" class="more mt-auto text-end pe-5 text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal2">Lihat Selengkapnya...</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe  width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.1233318781437!2d95.3209613!3d5.548727499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3040374556a2fc5d%3A0x6d5321b2f2ee1890!2sMuseum%20Aceh!5e0!3m2!1sid!2sid!4v1653133772280!5m2!1sid!2sid">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                
+
+                    <!-- Modal Start-->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="lh-lg">Museum Aceh didirikan pada masa pemerintahan Hindia Belanda, yang pemakaiannya diresmikan oleh Gubernur Sipil dan Militer Belanda di Aceh Jenderal H.N.A. Swart pada tanggal 31 Juli 1915. Pada waktu itu bangunannya berupa sebuah bangunan Rumah Tradisional Aceh (Rumoh Aceh). Bangunan tersebut berasal dari Paviliun Aceh yang ditempatkan di arena Pameran Kolonial (De Koloniale Tentoonsteling) di Semarang pada tanggal 13 Agustus - 15 November 1914.
+
+                                        <br><br>Setelah Indonesia Merdeka, Museum Aceh menjadi milik Pemerintah Daerah Aceh yang pengelolaannya diserahkan kepada Pemerintah Daerah Tk. II Banda Aceh. Pada tahun 1969 atas prakarsa T. Hamzah Bendahara, Museum Aceh dipindahkan dari tempatnya yang lama (Blang Padang) ke tempatnya yang sekarang ini, di Jalan Sultan Alaidin Mahmudsyah pada tanah seluas 10.800 m2. Setelah pemindahan ini pengelolaannya diserahkan kepada Badan Pembina Rumpun Iskandarmuda (BAPERIS) Pusat.
+                                        
+                                        <br><br>Sejalan dengan program Pemerintah tentang pengembangan kebudayaan, khususnya pengembangan permuseuman, sejak tahun 1974 Museum Aceh telah mendapat biaya Pelita melalui Proyek Rehabilitasi dan Perluasan Museum Daerah Istimewa Aceh. Melalui Proyek Pelita telah berhasil direhabilitasi bangunan lama dan sekaligus dengan pengadaan bangunan-bangunan baru. Bangunan baru yang telah didirikan itu gedung pameran tetap, gedung pertemuan, gedung pameran temporer dan perpustakaan, laboratorium dan rumah dinas.
+                                        
+                                        <br><br>Selain untuk pembangunan sarana/gedung Museum, dengan biaya Pelita telah pula diusahakan pengadaan koleksi, untuk menambah koleksi yang ada. Koleksi yang telah dapat dikumpulkan, secara berangsur-angsur diadakan penelitian dan hasilnya diterbitkan guna dipublikasikan secara luas.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn tutup" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal End -->
+                <!-- Menu3 End -->
+
+
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+
+        {% block totop %}
+       {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

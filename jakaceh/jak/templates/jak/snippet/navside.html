@@ -1,0 +1,72 @@
+{% load static %}
+<!-- Navbar Start-->
+<div class="sidebar-nav">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+        <div class="container-fluid">
+            <a href="" class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="30" height="30" preserveAspectRatio="xMidYMid meet" viewBox="0 0 48 48"><g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M7.94977 11.9498H39.9498"/><path d="M7.94977 23.9498H39.9498"/><path d="M7.94977 35.9498H39.9498"/></g></svg>
+            </a>
+            <a class="navbar-brand" href="{% url 'home' %}">JAK-ACEH</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'angkutan' %}">ANGKUTAN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'wisata' %}">WISATA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'penginapan' %}">PENGINAPAN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'kuliner' %}">KULINER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'souvenir' %}">SUVENIR</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            INFORMASI
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'polisi' %}">POLISI</a></li>
+                            <li><a class="dropdown-item" href="{% url 'rumah-sakit' %}">RUMAH SAKIT</a></li>
+                            <li><a class="dropdown-item" href="{% url 'bengkel' %}">BENGKEL</a></li>
+                            <li><a class="dropdown-item" href="{% url 'spbu' %}">SPBU & REST AREA</a></li>
+                            <li><a class="dropdown-item" href="{% url 'minimarket' %}">MINIMARKET</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+    
+    
+    <!-- Sidebar Start -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="profile">
+            <img src="{{ picture.url }}" alt="Photo Profile" width="100" height="100" class="rounded-circle" srcset="">
+        </div>
+        <div class="nama">
+            <h3>{{ user }}</h2>
+        </div>
+        <div class="surel">
+            <p>{{ user.email }}</p>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item menu">
+                    <a class="nav-link menus" href="{% url 'profil' %}">PROFILE</a>
+                </li>
+                <li class="nav-item menu">
+                    <a class="nav-link menus" href="{% url 'home' %}">HOME</a>
+                </li>
+            </ul>
+            <a class="keluar" href="{% url 'logout' %}">KELUAR
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="40" height="40" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g transform="translate(24 0) scale(-1 1)"><path fill="currentColor" d="M5 3h6a3 3 0 0 1 3 3v4h-1V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-4h1v4a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3Zm3 9h11.25L16 8.75l.664-.75l4.5 4.5l-4.5 4.5l-.664-.75L19.25 13H8v-1Z"/></g></svg>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- Sidebar End -->

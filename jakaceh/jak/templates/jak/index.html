@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+    {% block styles %}
+    <link href="{% static 'jak/css/index.css' %}" rel="stylesheet">
+    {% endblock styles %}
+    
+    {% block title %}
+    <title>Jak-Aceh</title>
+    {% endblock title %}
+    
+    {% block body %}
+    <!-- Landing Page Start -->
+    <div class="logo text-end text-light">
+      <h1>JAK-ACEH</h1>
+    </div>
+    <div class="moto text-light text-start">
+      <h2>Jak Beutroh Kalon Beudeuh <br> Bek Tuwo Piyoh</h2>
+      <p>Sarana Informasi untuk Wisata Aceh <br> yang Mantap Abis gada Obat</p>
+    </div>
+    <a href="{% url 'registrasi' %}"><button type="button" name="login" class="btn btn-block">Daftar Sekarang</button></a>
+    <!-- Landing Page End -->
+    {% endblock body %}

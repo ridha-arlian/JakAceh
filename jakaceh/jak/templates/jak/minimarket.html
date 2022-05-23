@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        {% block title %}
+        <title>Minimarket | Jak-Aceh</title>
+        {% endblock title %}
+
+        
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+        
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Menu1 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">INDOMARET BATOH</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/INDOBATOH.jpg' %}" class="img-fluid rounded" alt="INDOMARET BATOH">
+                                    <p class="card-text pt-4">
+                                        Batoh, Kec. Lueng Bata, Kota Banda Aceh, Aceh
+                                        <br><b>Buka</b>: Setiap Hari, 24 jam
+                                        <br><b>Telp</b>: 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.2103077251254!2d95.32773301383382!3d5.535795035393973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304039e0664a4d17%3A0xbb3fa7a6c922bef4!2sIndomaret%20Batoh!5e0!3m2!1sid!2sid!4v1653145888768!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu1 End -->
+                
+
+                <!-- Menu2 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">INDOMARET TEUKU UMAR</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/TEUKUUMAR.jpg' %}" class="img-fluid rounded" alt="INDOMARET TEUKU UMAR">
+                                    <p class="card-text pt-4">
+                                        Jl. Teuku Umar No.340-342, Seutui, Kec. Baiturrahman, Kota Banda Aceh, Aceh 23243
+                                        <br><b>Buka</b>: 08.00-23.00
+                                        <br><b>Telp</b>: 0816500580
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.180850323963!2d95.30735701383387!3d5.540178435351249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304030aadcdcc2cb%3A0x14ae33bc62bfe428!2sIndomaret%20Teuku%20Umar!5e0!3m2!1sid!2sid!4v1653146081424!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu2 End -->
+
+
+                <!-- Menu3 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">ALFAMART AJUN</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/AJUN.jpg' %}" class="img-fluid rounded" alt="ALFAMART AJUN">
+                                    <p class="card-text pt-4">
+                                        Jl. Ajun, Jeumpet Ajun, Kec. Darul Imarah, Kabupaten Aceh Besar, Aceh 23232
+                                        <br><b>Buka</b>: 08.00-23.00
+                                        <br><b>Telp</b>: 1500959
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.2765531918394!2d95.28718671383382!3d5.525924735490108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403a6d48427ae1%3A0x8edf89b0f34858d!2sAlfamart%20Ajun!5e0!3m2!1sid!2sid!4v1653146304984!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu3 End -->
+
+                
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+        
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

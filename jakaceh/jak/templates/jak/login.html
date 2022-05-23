@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static%}
+
+    {% block styles %}
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'jak/css/login.css' %}">
+    {% endblock styles %}
+
+    {% block title %}
+    <title>Masuk | Jak-Aceh</title>
+    {% endblock title %}
+
+    {% block body %}
+    
+    <!-- Form Login Start -->
+    <div class="login-form">
+      <form action="" method="POST">
+        {% csrf_token %}
+        <div class="form-head">
+          <h3>JAK-ACEH</h3>
+          <hr/>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control item" name="username" placeholder="Nama User">
+          <input type="password" class="form-control item" name="password" placeholder="Kata Sandi">
+          <a href="{% url 'registrasi' %}" class="links">Belum Punya Akun? Daftar</a>
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" name="login" class="btn btn-block login">LOGIN</button>
+        </div>
+      </form>
+    </div>
+    {% if form.errors %}
+    <div class="toast-body bg-danger text-light position-fixed top-0 end-0 p-3 {{ message.tags }}" id="toast" style="z-index: 11; border-radius: 5px;">
+      Masukkan Data Anda dengan Benar.
+    </div>
+
+    
+    {% endif %}
+    
+    <!-- Form Login End-->
+    {% endblock body %}

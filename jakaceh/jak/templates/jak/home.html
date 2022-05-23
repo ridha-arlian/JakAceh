@@ -1,0 +1,98 @@
+{% extends 'base.html' %}
+{% load static %}
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/home.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        {% block title %}
+        <title>Halaman Awal | Jak-Aceh</title>
+        {% endblock title %}
+
+        {% block body %}
+
+        {% include 'jak/snippet/navside.html' %}
+
+        <!-- Carousel Start -->
+        <div id="carouselExampleCaptions" class="carousel slide bg-light" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="{% static 'jak/img/carousel1.jpg' %}" class="d-block w-100 gambar" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MASJID <br> BAITURRAHMAN</h5>
+                        <p>Masjid Baiturrahman merupakan peninggalan <br> Kerajaan Aceh yang menjadi simbol agama, <br> budaya, dan perjuangan masyarakat Aceh.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="{% static 'jak/img/carousel2.jpg' %}" class="d-block w-100 gambar" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>MUSEUM <br> TSUNAMI ACEH</h5>
+                        <p>Museum Tsunami didirikan untuk mengenang peristiwa <br> tsunami 2004. Dokumentasi foto dan audio visual tentang <br> dampak peristiwa dahsyat itu.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="{% static 'jak/img/carousel3.jpg' %}" class="d-block w-100 gambar" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>TARI <br> SAMAN</h5>
+                        <p>Tari Saman merupakan salah satu tari <br> tradisional asal Aceh yang bahkan sudah <br> cukup dikenal di seluruh mancanegara.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- Carousel End -->
+
+        <!-- Card Start -->
+        <section class="bg-light pt-1 pb-5 shadow-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">PENGINAPAN</h5>
+                                <p class="card-text mb-4">Yuk, cek rekomendasi penginapan dari kami</p>
+                                <a href="{% url 'penginapan' %}" class="mt-auto align-self-end">Lihat Selengkapnya...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">WISATA</h5>
+                                <p class="card-text mb-4">Ingin liburan dengan tema Islami? Ke Aceh aja</p>
+                                <a href="{% url 'wisata' %}" class="mt-auto align-self-end">Lihat Selengkapnya...</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mb-3 d-flex align-items-stretch">
+                        <div class="card">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title">KULINER</h5>
+                                <p class="card-text mb-4">Mie Aceh? Kopi Gayo? atau yang lainnya? jangan ragu untuk nyobain</p>
+                                <a href="{% url 'kuliner' %} Kuliner.html" class="mt-auto align-self-end">Lihat Selengkapnya...</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Card End -->
+        {% endblock body %}     
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}

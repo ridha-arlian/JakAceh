@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+        {% block styles %}
+        <!-- CSS -->
+        <link rel="stylesheet" href="{% static 'jak/css/konten.css' %}">
+        <link rel="stylesheet" href="{% static 'jak/css/navside.css' %}">
+        {% endblock styles %}
+    
+        <!-- Font -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+
+        {% block title %}
+        <title>Rumah Sakit | Jak-Aceh</title>
+        {% endblock title %}
+
+        
+        {% block body %}
+        
+        {% include 'jak/snippet/navside.html' %}
+        
+        <!-- Menu Start -->
+        <section class="bg-light pb-2">
+            <div class="container">
+
+                <!-- Menu1 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">RUMAH SAKIT KESDAM ISKANDAR MUDA</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/KESDAM.jpg' %}" class="img-fluid rounded" alt="RUMAH SAKIT KESDAM ISKANDAR MUDA">
+                                    <p class="card-text pt-4">
+                                        Jl. T. Angkasa Bendahara, Kuta Alam, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415
+                                        <br><b>Buka</b>: Setiap hari, 24 jam
+                                        <br><b>Telp</b>: 065124712
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.0828303924104!2d95.32236441383384!3d5.554739435209009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3040374131c28ced%3A0xbb6139d8c0fc3642!2sRumah%20Sakit%20Kesdam%20Iskandar%20Muda!5e0!3m2!1sid!2sid!4v1653142160695!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu1 End -->
+                
+
+                <!-- Menu2 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">RSUDZA</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/RSUDZA.jpEg' %}" class="img-fluid rounded" alt="RSUDZA">
+                                    <p class="card-text pt-4">Jl. Teuku Moh. Daud Beureueh No.108, Bandar Baru, Kec. Kuta Alam, Kota Banda Aceh, Aceh 24415
+                                        <br><b>Buka</b>: Setiap hari, 24 jam
+                                        <br><b>Telp</b>: 065134565
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15884.330603630491!2d95.31579831180824!3d5.554766063028125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30403713e334d845%3A0x3e919c2162ffb069!2sRSUD%20Dr.%20Zainoel%20Abidin!5e0!3m2!1sid!2sid!4v1653142336213!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu2 End -->
+
+
+                <!-- Menu3 Start -->
+                    <div class="card shadow">
+                        <div class="row p-2">
+                            <h5 class="card-title text-start ms-4 mt-2 fw-bolder text-uppercase">RSUD MEURAXA</h5>
+                            <div class="col-md-4">
+                                <div class="card-body">
+                                    <img src="{% static 'jak/img/MEURAXA.jpg' %}" class="img-fluid rounded" alt="RSUD MEURAXA">
+                                    <p class="card-text pt-4">Jl. Soekarno - Hatta No.1, Mibo, Kec. Banda Raya, Kota Banda Aceh, Aceh 23231
+                                        <br><b>Buka</b>: Setiap hari, 24 jam
+                                        <br><b>Telp</b>: 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.328752642871!2d95.31563031383378!3d5.518134835565875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304039f356fd9263%3A0xc834416139e7a4a8!2sRSUD%20Meuraxa!5e0!3m2!1sid!2sid!4v1653142590695!5m2!1sid!2sid" width="690" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                <!-- Menu3 End -->
+
+                
+            </div>
+        </section>
+        <!-- Menu End -->
+        {% endblock body %}
+        
+
+        {% block totop %}
+        {% include 'jak/snippet/top.html' %}
+        {% endblock totop %}
