@@ -26,6 +26,8 @@ pip install pymongo==3.12.3
 5. Migration the database
 ```
 python manage.py makemigrations
+```
+```
 python manage.py migrate
 ```
 6. Run the Server
