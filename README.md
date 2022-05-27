@@ -17,16 +17,18 @@ pip install django
 ```
 3. Install Djongo Library with pip
 ```
+pip install djongo
+```
+4. Install Mongo ver. 3.12.3 Library with pip
+```
 pip install pymongo==3.12.3
 ```
-4. Migration the database
+5. Migration the database
 ```
 python manage.py makemigrations
-```
-```
 python manage.py migrate
 ```
-5. Run the Server
+6. Run the Server
 ```
 python manage.py runserver
 ```
