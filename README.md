@@ -1,6 +1,8 @@
 ## JakAceh
 JakAceh merupakan website yang dikerjakan sebagai tugas akhir pada mata kuliah Proyek Perangkat Lunak. JakAceh merupakan website yang dibuat untuk memudahkan para turis/pelancong melihat informasi seputar budaya di Aceh. JakAceh diharapkan menjadi sarana informasi yang baik, lengkap, serta informatif. 
 
+JakAceh is a website created as a final project for the Software Project course. JakAceh is a website designed to make it easier for tourists and travelers to learn about Aceh's culture. JakAceh is expected to be a reliable, comprehensive, and informative source of information.
+
 ## Technology we used in this website
 - Django 4.0.3
 - Bootstrap 5
